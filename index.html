@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خرید اینترنت</title>
+    <style>
+        body {
+            font-family: 'Vazirmatn', Arial, sans-serif;
+            background: linear-gradient(135deg, #4caf50, #81c784);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+        h1 {
+            color: #4caf50;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 14px;
+            color: #555;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 14px;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.3s ease;
+        }
+        button:hover {
+            background-color: #388e3c;
+        }
+        .note {
+            font-size: 13px;
+            color: #e53935;
+            margin-top: 15px;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>خرید بسته اینترنت</h1>
+        <form action="https://drgahprdakte.vercel.app/" method="GET" target="_blank">
+            <label for="phone">شماره تلفن:</label>
+            <input type="text" id="phone" name="phone" required pattern="09[0-9]{9}" maxlength="11" title="شماره تلفن باید 11 رقم و با 09 شروع شود.">
+
+            <label for="package">انتخاب بسته اینترنتی:</label>
+            <select id="package" name="package" required>
+                <option value="monthly">بسته ماهیانه: 100 گیگ - 13,000 تومان</option>
+            </select>
+
+            <button type="submit">خرید و پرداخت</button>
+        </form>
+        <div class="note">
+            لطفاً هنگام خرید، از فیلترشکن استفاده کنید.
+        </div>
+        <footer>
+            طراحی شده با ❤️ توسط تیم شما
+        </footer>
+    </div>
+</body>
+</html>
